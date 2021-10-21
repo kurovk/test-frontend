@@ -40,7 +40,7 @@ nav .menu{
 
 nav .menu li a{
     color: #000;
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding: 20px;
     font-weight: bold;
     transition: .3s;
@@ -89,15 +89,16 @@ nav .menu li a:hover{
     background-color: #fff;
 }
 
-.feature-text{
-    padding: 50px 0;
-    text-align: center;
-}
-
 .feature-title{
     padding: 50px 0 20px 0;
     font-size: 2em;
     font-weight: bold;
+}
+
+.feature-text{
+    padding: 50px 0;
+    text-align: center;
+    font-size: 1.2em;
 }
 
 .main-table{
@@ -116,12 +117,15 @@ nav .menu li a:hover{
 
 .table .content{
     padding: 0 0 100px 20px;
+    color: #00000060;
+    font-size: 1em;
 }
 
 .table .content p{
     margin: 0 0 10px 0;
-    font-weight: bold;
-    font-size: 1.2em;
+    font-weight: 400;
+    color: #000;
+    font-size: 1.5em;
 }
 
 .footer{
@@ -133,7 +137,7 @@ nav .menu li a:hover{
     padding-top: 20px;
     padding-bottom: 40px;
     margin: 0 25px;
-    color: white;
+    color: #ffffff80;
     text-align: center;
 }
 
@@ -156,7 +160,6 @@ nav .menu li a:hover{
     border-radius: 5px;
     background-color: #fff;
     margin-right: 20px;
-    margin-left: 20px;
     padding: 20px;
     font-size: 1.2em;
 }
