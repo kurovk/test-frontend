@@ -87,7 +87,7 @@ nav .menu li a:hover{
 }
 
 .feature-text{
-    padding: 100px 0;
+    padding: 50px 0;
     text-align: center;
 }
 
@@ -227,10 +227,7 @@ nav .menu li a:hover{
     .main-table{
         columns: 1;
     }
-    .feature-text{
-        padding-top: 50px;
-        text-align: center;
-    }
+
     /* Responsivo do menu */
     .hamburger{
         display: block;
