@@ -125,10 +125,14 @@
     <script>
         var menuBtn = document.querySelector('.hamburger')
         var menuOpen = document.querySelector('.menu')
+        var menuClose = document.querySelector('.menu')
         menuBtn.addEventListener('click', clicar)
-
+        menuClose.addEventListener('click', fechar)
         function clicar(){
             menuOpen.classList.toggle('open')
+        }
+        function fechar(){
+            menuClose.classList.remove('open')
         }
     </script>
     </body>
