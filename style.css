@@ -180,6 +180,7 @@ nav .menu li a:hover{
 /* Responsivo das demais classes */
 
 @media(max-width: 1200px){
+    /* Responsivo das Features */
     .main-table{
         columns: 2;
         padding: 0;
