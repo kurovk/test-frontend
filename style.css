@@ -16,6 +16,7 @@ img{
 }
 
 .header{
+    position: relative;
     background-color: #fcdb00;
 }
 
@@ -156,8 +157,6 @@ nav .menu li a:hover{
     color: #fff;
 }
 
-/* Reduzir o espaçamento após o header e antes do footer */
-
 .social{
     display: flex;
     justify-content: center;
@@ -178,6 +177,8 @@ nav .menu li a:hover{
     background-color: #fcdb0090;
 }
 
+/* Responsivo das demais classes */
+
 @media(max-width: 1200px){
     .main-table{
         columns: 2;
@@ -189,13 +190,40 @@ nav .menu li a:hover{
     .main-table{
         columns: 1;
     }
+    .feature-text{
+        padding-top: 50px;
+        text-align: center;
+    }
     /* Responsivo do menu */
     .hamburger{
         display: block;
     }
+
+    /* Respondivo menu hamburger */
     nav .menu{
-        display: none;
+        visibility: hidden;
+        display: flex;
+        position: fixed;
+        margin-left: -100%;
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #fcdb00;
+        transition: .3s;
     }
+    
+    nav .menu li{
+        margin-bottom: 50px;
+    }
+}
+
+nav .menu.open{
+    visibility: visible;
+    margin-left: initial;
 }
 
 @media(max-width: 512px){
