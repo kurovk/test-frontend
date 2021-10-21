@@ -50,15 +50,6 @@ nav .menu li a:hover{
     display: none;
 }
 
-@media(max-width:768px){
-    .hamburger{
-        display: block;
-    }
-    nav .menu{
-        display: none;
-    }
-}
-
 .hm{
     display: flex;
     background-color: #000;
@@ -167,29 +158,6 @@ nav .menu li a:hover{
 
 /* Reduzir o espaçamento após o header e antes do footer */
 
-@media(max-width: 512px){
-    .new-content form{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .new-content input{
-        width: 80%;
-        border: none;
-        border-radius: 5px;
-        background-color: #fff;
-        margin-right: 20px;
-        margin-left: 20px;
-        padding: 20px;
-        font-size: 1.2em;
-    }
-
-    .new-content .btn{
-        margin-top: 20px;
-    }
-}
-
 .social{
     display: flex;
     justify-content: center;
@@ -213,6 +181,7 @@ nav .menu li a:hover{
 @media(max-width: 1200px){
     .main-table{
         columns: 2;
+        padding: 0;
     } 
 }
 
@@ -220,11 +189,39 @@ nav .menu li a:hover{
     .main-table{
         columns: 1;
     }
+    /* Responsivo do menu */
+    .hamburger{
+        display: block;
+    }
+    nav .menu{
+        display: none;
+    }
 }
 
 @media(max-width: 512px){
     .main-table{
         columns: 1;
+    }
+    /* Responsivo do formulário */
+    .new-content form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .new-content input{
+        width: 80%;
+        border: none;
+        border-radius: 5px;
+        background-color: #fff;
+        margin-right: 20px;
+        margin-left: 20px;
+        padding: 20px;
+        font-size: 1.2em;
+    }
+
+    .new-content .btn{
+        margin-top: 20px;
     }
 }
 
